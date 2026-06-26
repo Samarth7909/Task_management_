@@ -1,5 +1,6 @@
 package com.taskmanager.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import java.time.LocalDateTime;
 
 public class Task {
@@ -8,6 +9,7 @@ public class Task {
     private String name;
     private String description;
     private TaskStatus status;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss")
     private LocalDateTime createdDate;
 
     public enum TaskStatus {
