@@ -25,7 +25,12 @@ export class AppComponent implements OnInit {
   onTaskCreated(request: TaskRequest): void {
     this.taskService.createTask(request).subscribe({
       next: () => { this.showSuccess('Task created successfully!'); this.refresh(); },
-      error: () => this.showError('Failed to create task.')
+      error: (err) => {
+        const msg = err?.error?.name || err?.error?.message
+          || (typeof err?.error === 'string' ? err.error : null)
+          || 'Failed to create task.';
+        this.showError(msg);
+      }
     });
   }
 
