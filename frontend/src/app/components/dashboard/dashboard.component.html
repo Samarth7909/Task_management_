@@ -1,0 +1,34 @@
+<section class="dashboard">
+  <h2 class="section-title">Dashboard Summary</h2>
+
+  <div class="stats-grid">
+
+    <!-- Total Tasks card -->
+    <div class="stat-card total">
+      <span class="stat-icon">📋</span>
+      <div class="stat-info">
+        <span class="stat-value">{{ summary.totalTasks }}</span>
+        <span class="stat-label">Total Tasks</span>
+      </div>
+    </div>
+
+    <!-- Pending Tasks card -->
+    <div class="stat-card pending">
+      <span class="stat-icon">⏳</span>
+      <div class="stat-info">
+        <span class="stat-value">{{ summary.pendingTasks }}</span>
+        <span class="stat-label">Pending</span>
+      </div>
+    </div>
+
+    <!-- Completed Tasks card -->
+    <div class="stat-card completed">
+      <span class="stat-icon">✅</span>
+      <div class="stat-info">
+        <span class="stat-value">{{ summary.completedTasks }}</span>
+        <span class="stat-label">Completed</span>
+      </div>
+    </div>
+
+  </div>
+</section>

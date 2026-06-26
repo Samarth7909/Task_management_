@@ -1,0 +1,25 @@
+<div class="app-shell">
+
+  <header class="app-header">
+    <h1>📋 Task Manager</h1>
+  </header>
+
+  <main class="app-main">
+
+    <div *ngIf="successMessage" class="toast toast-success">✅ {{ successMessage }}</div>
+    <div *ngIf="errorMessage"   class="toast toast-error">❌ {{ errorMessage }}</div>
+
+    <app-dashboard [summary]="summary"></app-dashboard>
+
+    <app-task-form (taskCreated)="onTaskCreated($event)"></app-task-form>
+
+    <app-task-list
+      [tasks]="tasks"
+      [isLoading]="isLoading"
+      (markCompleted)="onMarkCompleted($event)"
+      (deleteTask)="onDeleteTask($event)"
+    ></app-task-list>
+
+  </main>
+
+</div>

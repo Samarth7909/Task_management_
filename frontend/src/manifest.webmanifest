@@ -1,0 +1,16 @@
+{
+  "name": "Task Manager",
+  "short_name": "Tasks",
+  "description": "Manage your tasks offline-first with Task Manager",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f1f5f9",
+  "theme_color": "#6366f1",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}
