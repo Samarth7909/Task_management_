@@ -8,12 +8,13 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.atomic.AtomicLong;
 
 @Repository
 public class TaskRepository {
 
     private final List<Task> tasks = new CopyOnWriteArrayList<>();
-    private final java.util.concurrent.atomic.AtomicLong idSequence = new java.util.concurrent.atomic.AtomicLong(1);
+    private final AtomicLong idSequence = new AtomicLong(1);
 
     public TaskRepository() {
         tasks.add(new Task(idSequence.getAndIncrement(), "Setup project", "Initialize Spring Boot project", TaskStatus.COMPLETED, LocalDateTime.now().minusDays(2)));

@@ -14,6 +14,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+@CrossOrigin(origins = "https://task-management-ilndhqkcr-samarth7909s-projects.vercel.app")
 @RestController
 @RequestMapping("/api/tasks")
 public class TaskController {
