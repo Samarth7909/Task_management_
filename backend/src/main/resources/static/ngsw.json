@@ -1,0 +1,66 @@
+{
+  "configVersion": 1,
+  "timestamp": 1782478782918,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app-shell",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/index.html",
+        "/main.ebb93cf698a98501.js",
+        "/polyfills.4c2cc5812338352e.js",
+        "/runtime.5c88d3164b5317cc.js",
+        "/styles.468ce45790aad840.css"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "tasks-api",
+      "patterns": [
+        "\\/api\\/tasks",
+        "\\/api\\/tasks\\/dashboard"
+      ],
+      "strategy": "freshness",
+      "maxSize": 50,
+      "maxAge": 3600000,
+      "timeoutMs": 5000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/index.html": "b7a4ebc409bc6f31876c0543bb1adfd78be8687f",
+    "/main.ebb93cf698a98501.js": "2108ef0ac3ab12f50a1f377c8ef94a469e1ed069",
+    "/polyfills.4c2cc5812338352e.js": "cabb0d06f8c58b8b197a7a5b406fed950ad3c617",
+    "/runtime.5c88d3164b5317cc.js": "081548c84366d1364afb0111edd01bfeaed599a3",
+    "/styles.468ce45790aad840.css": "b90c8911cd11a94ce44570f015860fdf5eb95ad4"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
