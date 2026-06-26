@@ -1,5 +1,5 @@
 {
   "buildCommand": "npm run build -- --configuration production",
-  "outputDirectory": "dist/frontend",
+  "outputDirectory": "dist/task-manager-frontend",
   "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
