@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://your-backend.onrender.com/api'
+  apiUrl: 'https://endearing-flow-production-629c.up.railway.app/api'
 };
